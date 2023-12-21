@@ -8,6 +8,6 @@ DevScholar is a cutting-edge e-learning platform dedicated to empowering individ
 - Flexible Learning Journey: Learn at your own pace with the ability to revisit materials and access courses anytime.
 - Insightful Articles and Guides: Stay ahead of the tech curve with in-depth articles and step-by-step guides crafted by industry professionals.
 - Career Development: Gain the skills needed for a thriving career in tech, not just technical know-how.
-- Community Support: Join forums and chats to connect with peers, share experiences, and receive guidance from seasoned mentors. 
+- Community Support: Join forums and chats to connect with peers, share experiences, and receive guidance from seasoned mentors.
 
 With DevScholar, unlock the door to a future in coding. Start your developer journey today and discover a world of opportunities!
