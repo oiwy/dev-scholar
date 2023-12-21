@@ -1,10 +1,12 @@
+import { Footer, Header } from "@/widgets";
+
 const App = () => {
   return (
-    <>
-      <header></header>
+    <div className="flex h-screen flex-col justify-between">
+      <Header />
       <main></main>
-      <footer></footer>
-    </>
+      <Footer />
+    </div>
   );
 };
 
