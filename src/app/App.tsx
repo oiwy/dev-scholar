@@ -4,7 +4,7 @@ import { Home, NoMatch } from "@/pages";
 
 const App = () => {
   return (
-    <div className="flex h-screen flex-col justify-between">
+    <div className="flex h-screen flex-col justify-between gap-y-2">
       <Header />
       <main>
         <Routes>
