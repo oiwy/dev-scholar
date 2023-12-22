@@ -1,10 +1,17 @@
-import { Footer, Header } from "@/widgets";
+import { Header, Footer } from "@/widgets";
+import { Route, Routes } from "react-router-dom";
+import { Home, NoMatch } from "@/pages";
 
 const App = () => {
   return (
     <div className="flex h-screen flex-col justify-between">
       <Header />
-      <main></main>
+      <main>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
