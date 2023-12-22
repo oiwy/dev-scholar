@@ -4,14 +4,13 @@ export default {
   theme: {
     container: {
       padding: {
-        DEFAULT: "2rem",
-        lg: "4rem",
+        DEFAULT: "0.5rem",
       },
       center: true,
     },
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["dark"],
+    themes: ["lofi"],
   },
 };
