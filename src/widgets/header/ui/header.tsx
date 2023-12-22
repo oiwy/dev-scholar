@@ -1,118 +1,62 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <>
       <header>
-        <nav className="navbar bg-base-100">
+        <div className="container navbar bg-base-100 py-6">
           <div className="navbar-start">
-            <div className="dropdown">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-circle btn-ghost"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h7"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabIndex={0}
-                className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
-              >
-                <li>
-                  <a>Homepage</a>
-                </li>
-                <li>
-                  <a>Portfolio</a>
-                </li>
-                <li>
-                  <a>About</a>
-                </li>
-              </ul>
-            </div>
+            <Link className="text-3xl font-medium" to={"/"}>
+              DevScholar
+            </Link>
           </div>
           <div className="navbar-center">
-            <a className="btn btn-ghost text-xl">DevScholar</a>
+            <nav className="flex items-center gap-x-5">
+              <Link
+                className="text-2xl leading-none hover:underline"
+                to={"/articles"}
+              >
+                статьи
+              </Link>
+              <Link
+                className="text-2xl leading-none hover:underline"
+                to={"/courses"}
+              >
+                курсы
+              </Link>
+              <Link
+                className="text-2xl leading-none hover:underline"
+                to={"/chats"}
+              >
+                чаты
+              </Link>
+            </nav>
           </div>
           <div className="navbar-end">
-            <button className="btn btn-circle btn-ghost">
+            <button>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                width="42"
+                height="44"
+                viewBox="0 0 42 44"
                 fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  d="M2 12.7272C2 8.00874 7.87159 3.97328 11.3763 2.74554C16.2573 1.03569 21.2763 2.54768 25.9741 4.45669C29.0853 5.72093 31.9349 8.4382 31.8133 12.2836C31.7227 15.1467 27.916 20.6555 26.1426 22.4237C23.1364 25.4211 20.1764 25.846 16.1767 25.846C13.4919 25.846 10.1555 25.5959 8.34444 22.9941C6.81866 20.8021 5.78477 18.0368 4.63884 15.5791C3.98822 14.1838 3.73343 12.2796 2.50531 11.5865"
+                  stroke="#141613"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M26.3904 25.3327C28.6423 25.7949 30.6398 29.7877 32.2968 31.4176C34.0605 33.1525 35.7977 34.8571 37.5703 36.5501C39.281 38.184 40.4654 40.2678 42 42"
+                  stroke="#141613"
+                  stroke-width="3"
+                  stroke-linecap="round"
                 />
               </svg>
             </button>
-            <button className="btn btn-circle btn-ghost">
-              <div className="indicator">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                  />
-                </svg>
-                <span className="badge indicator-item badge-primary badge-xs"></span>
-              </div>
-            </button>
-            <div className="dropdown dropdown-end">
-              <div
-                tabIndex={0}
-                role="button"
-                className="avatar btn btn-circle btn-ghost"
-              >
-                <div className="w-10 rounded-full">
-                  <img
-                    alt="Tailwind CSS Navbar component"
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                  />
-                </div>
-              </div>
-              <ul
-                tabIndex={0}
-                className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
-              >
-                <li>
-                  <a className="justify-between">
-                    Profile
-                    <span className="badge">New</span>
-                  </a>
-                </li>
-                <li>
-                  <a>Settings</a>
-                </li>
-                <li>
-                  <a>Logout</a>
-                </li>
-              </ul>
-            </div>
           </div>
-        </nav>
+        </div>
       </header>
     </>
   );

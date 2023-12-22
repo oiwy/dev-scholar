@@ -1,47 +1,44 @@
+import { Post } from "@/entities";
+
 const Home = () => {
   const Posts = [
     {
       id: 1,
-      title: "Lorem ipsum dolor sit amet",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      difficulty: "easy",
       author: "John Doe",
-      date: "2021-01-01",
+      created: "2021-01-01",
+      updated: "2021-01-01",
+      title:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      tags: ["tag1", "tag2"],
       cover: "https://picsum.photos/200/300",
+      description:
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
       content: {},
     },
     {
       id: 2,
-      title: "Lorem ipsum dolor sit amet",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      difficulty: "easy",
       author: "John Doe",
-      date: "2021-01-01",
+      created: "2021-01-01",
+      updated: "2021-01-01",
+      title:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      tags: ["tag1", "tag2"],
       cover: "https://picsum.photos/200/300",
+      description:
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
       content: {},
     },
     {
       id: 3,
-      title: "Lorem ipsum dolor sit amet",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      difficulty: "easy",
       author: "John Doe",
-      date: "2021-01-01",
+      created: "2021-01-01",
+      updated: "2021-01-01",
+      title:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      tags: ["tag1", "tag2"],
       cover: "https://picsum.photos/200/300",
-      content: {},
-    },
-    {
-      id: 4,
-      title: "Lorem ipsum dolor sit amet",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      difficulty: "easy",
-      author: "John Doe",
-      date: "2021-01-01",
-      cover: "https://picsum.photos/200/300",
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
       content: {},
     },
   ];
@@ -49,21 +46,10 @@ const Home = () => {
   return (
     <>
       <section>
-        <div className="container">
+        <div>
           <div className="flex flex-col gap-y-3">
             {Posts.map((post) => (
-              <div key={post.id} className="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src={post.cover} alt="cover" />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">{post.title}</h2>
-                  <p>{post.description}</p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Read</button>
-                  </div>
-                </div>
-              </div>
+              <Post key={post.id} post={post} />
             ))}
           </div>
         </div>
