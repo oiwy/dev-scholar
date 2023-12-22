@@ -26,11 +26,11 @@
       "@/*": ["src/*"],
       "app/*": ["src/app/*"],
       "entities/*": ["src/entities/*"],
-      "shared/*": ["src/shared/*"],
       "features/*": ["src/features/*"],
-      "widgets/*": ["src/widgets/*"],
       "pages/*": ["src/pages/*"],
-      "processes/*": ["src/processes/*"]
+      "processes/*": ["src/processes/*"],
+      "shared/*": ["src/shared/*"],
+      "widgets/*": ["src/widgets/*"]
     }
   },
   "include": ["src"],
