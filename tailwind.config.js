@@ -8,6 +8,11 @@ export default {
       },
       center: true,
     },
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "1024px",
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
