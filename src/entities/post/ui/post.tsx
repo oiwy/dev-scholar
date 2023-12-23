@@ -12,7 +12,7 @@ interface IPost {
 
 const Post = ({ post }: { post: IPost }) => {
   return (
-    <article className="flex max-w-[800px] flex-col gap-y-7 border-2 border-black p-7">
+    <article className="flex flex-col gap-y-7 border-2 border-black p-7">
       <header className="flex gap-x-2">
         {/* <img alt="user" /> */}
         <div className="h-10 w-10 bg-black"></div>
@@ -22,7 +22,7 @@ const Post = ({ post }: { post: IPost }) => {
         </div>
       </header>
       <div className="flex flex-col gap-y-3">
-        <h1 className="text-2xl font-semibold">{post.title}</h1>
+        <h1 className="text-2xl font-bold">{post.title}</h1>
         <div className="flex gap-x-1">
           {post.tags.map((tag) => (
             <span className="text-base" key={tag}>
